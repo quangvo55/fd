@@ -66,7 +66,7 @@ def run():
   solver = pywraplp.Solver('FD', pywraplp.Solver.CBC_MIXED_INTEGER_PROGRAMMING)
 
   all_players = []
-  with open('projections.csv', 'rb') as csvfile:
+  with open('data/week17.csv', 'rb') as csvfile:
     csvdata = csv.DictReader(csvfile, skipinitialspace=True)
 
     for row in csvdata:
